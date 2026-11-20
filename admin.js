@@ -33,7 +33,7 @@ document.addEventListener('input',e=>{
  const it=S.items.find(i=>i.id===row.dataset.id);if(!it)return;
  const n=Math.max(0,Math.floor(+t.value)||0);
  if(t.dataset.a==='qty')it.qty=n;if(t.dataset.a==='price')it.price=n;
- mark();clearTimeout(aq);aq=setTimeout(()=>{$('views').innerHTML=VIEWS[view][1]()},250);
+ mark();clearTimeout(aq);aq=setTimeout(()=>{renderChrome();renderItems()},250);
 });
 document.addEventListener('click',e=>{
  const b=e.target.closest('button');if(!b)return;
