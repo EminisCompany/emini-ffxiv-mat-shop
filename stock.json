@@ -3,147 +3,435 @@
  "items": [
   {
    "id": "i0",
-   "name": "Steel Rivets",
-   "ic": "m5093",
+   "name": "Ancient Lumber",
+   "ic": "m7606",
    "qty": 9999,
-   "price": 120,
-   "cat": "Fittings"
+   "price": 3500,
+   "cat": "Lumber"
   },
   {
    "id": "i1",
-   "name": "Cobalt Ingot",
-   "ic": "m5059",
-   "qty": 3600,
-   "price": 95,
-   "cat": "Ingots"
+   "name": "Garlond Steel",
+   "ic": "m12913",
+   "qty": 2000,
+   "price": 4400,
+   "cat": "Misc"
   },
   {
    "id": "i2",
-   "name": "Mythril Rivets",
-   "ic": "m5099",
-   "qty": 600,
-   "price": 60,
-   "cat": "Fittings"
+   "name": "Treated Spruce Lumber",
+   "ic": "m5379",
+   "qty": 150,
+   "price": 5500,
+   "cat": "Lumber"
   },
   {
    "id": "i3",
-   "name": "Steel Ingot",
-   "ic": "m5058",
-   "qty": 4800,
-   "price": 200,
-   "cat": "Ingots"
+   "name": "Topaz",
+   "ic": "m5190",
+   "qty": 1200,
+   "price": 4200,
+   "cat": "Gems"
   },
   {
    "id": "i4",
-   "name": "Cobalt Joint Plate",
-   "ic": "m7023",
+   "name": "Void Glue",
+   "ic": "m5506",
    "qty": 1800,
-   "price": 40,
-   "cat": "Fittings"
+   "price": 3000,
+   "cat": "Misc"
   },
   {
    "id": "i5",
-   "name": "Steel Joint Plate",
-   "ic": "m7022",
-   "qty": 25,
-   "price": 120,
+   "name": "Cobalt Joint Plate",
+   "ic": "m7023",
+   "qty": 4800,
+   "price": 1700,
    "cat": "Fittings"
   },
   {
    "id": "i6",
-   "name": "Darksteel Ingot",
-   "ic": "m5060",
-   "qty": 2400,
-   "price": 95,
-   "cat": "Ingots"
+   "name": "Steel Joint Plate",
+   "ic": "m7022",
+   "qty": 0,
+   "price": 1100,
+   "cat": "Fittings"
   },
   {
    "id": "i7",
-   "name": "Cobalt Rivets",
-   "ic": "m5094",
-   "qty": 900,
-   "price": 60,
-   "cat": "Fittings"
+   "name": "Cobalt Ingot",
+   "ic": "m5059",
+   "qty": 7500,
+   "price": 900,
+   "cat": "Ingots"
   },
   {
    "id": "i8",
-   "name": "Iron Rivets",
-   "ic": "m5092",
-   "qty": 0,
-   "price": 200,
-   "cat": "Fittings"
+   "name": "Darksteel Ingot",
+   "ic": "m5060",
+   "qty": 600,
+   "price": 5500,
+   "cat": "Ingots"
   },
   {
    "id": "i9",
-   "name": "Electrum Ingot",
-   "ic": "m5066",
-   "qty": 1200,
-   "price": 40,
-   "cat": "Ingots"
+   "name": "Cobalt Rivets",
+   "ic": "m5094",
+   "qty": 900,
+   "price": 1700,
+   "cat": "Fittings"
   },
   {
    "id": "i10",
    "name": "Silver Ingot",
    "ic": "m5064",
-   "qty": 9999,
-   "price": 120,
+   "qty": 2400,
+   "price": 1400,
    "cat": "Ingots"
   },
   {
    "id": "i11",
-   "name": "Mythril Ingot",
-   "ic": "m5065",
+   "name": "Iron Nails",
+   "ic": "m7018",
    "qty": 3600,
-   "price": 95,
-   "cat": "Ingots"
+   "price": 800,
+   "cat": "Fittings"
   },
   {
    "id": "i12",
-   "name": "Clear Glass Lens",
-   "ic": "m5512",
-   "qty": 600,
-   "price": 60,
-   "cat": "Misc"
+   "name": "Electrum Ingot",
+   "ic": "m5066",
+   "qty": 9999,
+   "price": 1700,
+   "cat": "Ingots"
   },
   {
    "id": "i13",
-   "name": "Steel Nails",
-   "ic": "m7019",
-   "qty": 4800,
-   "price": 200,
-   "cat": "Fittings"
+   "name": "Darksteel Nugget",
+   "ic": "m5061",
+   "qty": 2000,
+   "price": 2400,
+   "cat": "Ingots"
   },
   {
    "id": "i14",
-   "name": "Spruce Lumber",
-   "ic": "m5378",
-   "qty": 1800,
-   "price": 40,
-   "cat": "Lumber"
-  },
-  {
-   "id": "i15",
-   "name": "Ancient Lumber",
-   "ic": "m7606",
-   "qty": 25,
-   "price": 120,
-   "cat": "Lumber"
-  },
-  {
-   "id": "i16",
-   "name": "Iron Nails",
-   "ic": "m7018",
-   "qty": 2400,
-   "price": 95,
+   "name": "Darksteel Rivets",
+   "ic": "m5095",
+   "qty": 150,
+   "price": 2500,
    "cat": "Fittings"
   },
   {
-   "id": "i17",
+   "id": "i15",
+   "name": "Rose Gold Nugget",
+   "ic": "m5068",
+   "qty": 1200,
+   "price": 2000,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i16",
    "name": "Rose Gold Ingot",
    "ic": "m5067",
-   "qty": 900,
-   "price": 60,
+   "qty": 1800,
+   "price": 500,
    "cat": "Ingots"
+  },
+  {
+   "id": "i17",
+   "name": "Mythril Plate",
+   "ic": "m5079",
+   "qty": 4800,
+   "price": 1700,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i18",
+   "name": "Horn Glue",
+   "ic": "m5505",
+   "qty": 0,
+   "price": 1300,
+   "cat": "Misc"
+  },
+  {
+   "id": "i19",
+   "name": "Platinum Nugget",
+   "ic": "m9359",
+   "qty": 7500,
+   "price": 2900,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i20",
+   "name": "Spruce Lumber",
+   "ic": "m5378",
+   "qty": 600,
+   "price": 2400,
+   "cat": "Lumber"
+  },
+  {
+   "id": "i21",
+   "name": "Pure Titanium Plate",
+   "ic": "m26532",
+   "qty": 900,
+   "price": 22000,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i22",
+   "name": "Cassia Lumber",
+   "ic": "m12232",
+   "qty": 2400,
+   "price": 4000,
+   "cat": "Lumber"
+  },
+  {
+   "id": "i23",
+   "name": "Varnish",
+   "ic": "m7017",
+   "qty": 3600,
+   "price": 1600,
+   "cat": "Misc"
+  },
+  {
+   "id": "i24",
+   "name": "Rhodonite",
+   "ic": "m19967",
+   "qty": 9999,
+   "price": 3900,
+   "cat": "Gems"
+  },
+  {
+   "id": "i25",
+   "name": "Wolfram Ingot",
+   "ic": "m7607",
+   "qty": 2000,
+   "price": 3500,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i26",
+   "name": "High Mythrite Ingot",
+   "ic": "m14146",
+   "qty": 150,
+   "price": 4300,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i27",
+   "name": "Celestine",
+   "ic": "m12912",
+   "qty": 1200,
+   "price": 4500,
+   "cat": "Gems"
+  },
+  {
+   "id": "i28",
+   "name": "Beech Lumber",
+   "ic": "m19925",
+   "qty": 1800,
+   "price": 1800,
+   "cat": "Lumber"
+  },
+  {
+   "id": "i29",
+   "name": "Cedar Lumber",
+   "ic": "m5366",
+   "qty": 4800,
+   "price": 1900,
+   "cat": "Lumber"
+  },
+  {
+   "id": "i30",
+   "name": "Clear Glass Lens",
+   "ic": "m5512",
+   "qty": 0,
+   "price": 53,
+   "cat": "Misc"
+  },
+  {
+   "id": "i31",
+   "name": "Cobalt Plate",
+   "ic": "m5074",
+   "qty": 7500,
+   "price": 2500,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i32",
+   "name": "Cryptomeria Lumber",
+   "ic": "m26530",
+   "qty": 600,
+   "price": 22000,
+   "cat": "Lumber"
+  },
+  {
+   "id": "i33",
+   "name": "Darksteel Plate",
+   "ic": "m5075",
+   "qty": 900,
+   "price": 4000,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i34",
+   "name": "Enchanted Hardsilver Ink",
+   "ic": "m12602",
+   "qty": 2400,
+   "price": 3000,
+   "cat": "Misc"
+  },
+  {
+   "id": "i35",
+   "name": "Galvanized Garlond Steel",
+   "ic": "m14935",
+   "qty": 3600,
+   "price": 6000,
+   "cat": "Misc"
+  },
+  {
+   "id": "i36",
+   "name": "Gold Ingot",
+   "ic": "m5069",
+   "qty": 9999,
+   "price": 350,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i37",
+   "name": "Hardsilver Ingot",
+   "ic": "m12521",
+   "qty": 2000,
+   "price": 2500,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i38",
+   "name": "Holy Cedar Lumber",
+   "ic": "m12580",
+   "qty": 150,
+   "price": 2496,
+   "cat": "Lumber"
+  },
+  {
+   "id": "i39",
+   "name": "Iron Rivets",
+   "ic": "m5092",
+   "qty": 1200,
+   "price": 73,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i40",
+   "name": "Larimar",
+   "ic": "m12541",
+   "qty": 1800,
+   "price": 3200,
+   "cat": "Gems"
+  },
+  {
+   "id": "i41",
+   "name": "Molybdenum Ingot",
+   "ic": "m19947",
+   "qty": 4800,
+   "price": 2200,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i42",
+   "name": "Mythril Ingot",
+   "ic": "m5065",
+   "qty": 0,
+   "price": 514,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i43",
+   "name": "Mythril Rivets",
+   "ic": "m5099",
+   "qty": 7500,
+   "price": 583,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i44",
+   "name": "Mythrite Ingot",
+   "ic": "m12519",
+   "qty": 600,
+   "price": 2300,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i45",
+   "name": "Mythrite Rivets",
+   "ic": "m12528",
+   "qty": 900,
+   "price": 2100,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i46",
+   "name": "Platinum Ingot",
+   "ic": "m9360",
+   "qty": 2400,
+   "price": 300,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i47",
+   "name": "Steel Ingot",
+   "ic": "m5058",
+   "qty": 3600,
+   "price": 258,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i48",
+   "name": "Steel Rivets",
+   "ic": "m5093",
+   "qty": 9999,
+   "price": 313,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i49",
+   "name": "Tempered Glass",
+   "ic": "m16908",
+   "qty": 2000,
+   "price": 9000,
+   "cat": "Misc"
+  },
+  {
+   "id": "i50",
+   "name": "Titanium Ingot",
+   "ic": "m12525",
+   "qty": 150,
+   "price": 2300,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i51",
+   "name": "Triphane",
+   "ic": "m19962",
+   "qty": 1200,
+   "price": 2300,
+   "cat": "Gems"
+  },
+  {
+   "id": "i52",
+   "name": "Walnut Lumber",
+   "ic": "m5371",
+   "qty": 1800,
+   "price": 219,
+   "cat": "Lumber"
+  },
+  {
+   "id": "i53",
+   "name": "Wing Glue",
+   "ic": "m5507",
+   "qty": 4800,
+   "price": 3500,
+   "cat": "Misc"
   }
  ]
 }

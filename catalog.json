@@ -1,182 +1,326 @@
 [
  {
-  "id": "m5093",
-  "name": "Steel Rivets",
-  "icon": "icons/21003.png"
- },
- {
-  "id": "m5059",
-  "name": "Cobalt Ingot",
-  "icon": "icons/20802.png"
- },
- {
-  "id": "m5099",
-  "name": "Mythril Rivets",
-  "icon": "icons/21003.png"
- },
- {
-  "id": "m5058",
-  "name": "Steel Ingot",
-  "icon": "icons/20802.png"
- },
- {
-  "id": "m7023",
-  "name": "Cobalt Joint Plate",
-  "icon": "icons/21003.png"
- },
- {
-  "id": "m7022",
-  "name": "Steel Joint Plate",
-  "icon": "icons/21003.png"
- },
- {
-  "id": "m5060",
-  "name": "Darksteel Ingot",
-  "icon": "icons/20804.png"
- },
- {
-  "id": "m5094",
-  "name": "Cobalt Rivets",
-  "icon": "icons/21003.png"
- },
- {
-  "id": "m5092",
-  "name": "Iron Rivets",
-  "icon": "icons/21003.png"
- },
- {
-  "id": "m5066",
-  "name": "Electrum Ingot",
-  "icon": "icons/20812.png"
- },
- {
-  "id": "m5064",
-  "name": "Silver Ingot",
-  "icon": "icons/20810.png"
- },
- {
-  "id": "m5065",
-  "name": "Mythril Ingot",
-  "icon": "icons/20811.png"
- },
- {
-  "id": "m5512",
-  "name": "Clear Glass Lens",
-  "icon": "icons/22605.png"
- },
- {
-  "id": "m7019",
-  "name": "Steel Nails",
-  "icon": "icons/21008.png"
- },
- {
-  "id": "m5378",
-  "name": "Spruce Lumber",
-  "icon": "icons/22465.png"
- },
- {
   "id": "m7606",
   "name": "Ancient Lumber",
-  "icon": "icons/22454.png"
- },
- {
-  "id": "m7018",
-  "name": "Iron Nails",
-  "icon": "icons/21004.png"
- },
- {
-  "id": "m5067",
-  "name": "Rose Gold Ingot",
-  "icon": "icons/20814.png"
- },
- {
-  "id": "m7017",
-  "name": "Varnish",
-  "icon": "icons/22802.png"
+  "icon": "icons/22454.png",
+  "price": 3500
  },
  {
   "id": "m12913",
   "name": "Garlond Steel",
-  "icon": "icons/20966.png"
- },
- {
-  "id": "m12519",
-  "name": "Mythrite Ingot",
-  "icon": "icons/20824.png"
- },
- {
-  "id": "m5075",
-  "name": "Darksteel Plate",
-  "icon": "icons/20954.png"
+  "icon": "icons/20966.png",
+  "price": 4400
  },
  {
   "id": "m5379",
   "name": "Treated Spruce Lumber",
-  "icon": "icons/22465.png"
+  "icon": "icons/22465.png",
+  "price": 5500
  },
  {
-  "id": "m5373",
-  "name": "Oak Lumber",
-  "icon": "icons/22455.png"
- },
- {
-  "id": "m5073",
-  "name": "Steel Plate",
-  "icon": "icons/20952.png"
- },
- {
-  "id": "m5287",
-  "name": "Uraeus Leather",
-  "icon": "icons/21823.png"
- },
- {
-  "id": "m5061",
-  "name": "Darksteel Nugget",
-  "icon": "icons/20808.png"
- },
- {
-  "id": "m5095",
-  "name": "Darksteel Rivets",
-  "icon": "icons/21003.png"
- },
- {
-  "id": "m5371",
-  "name": "Walnut Lumber",
-  "icon": "icons/22456.png"
- },
- {
-  "id": "m5079",
-  "name": "Mythril Plate",
-  "icon": "icons/20956.png"
- },
- {
-  "id": "m5505",
-  "name": "Horn Glue",
-  "icon": "icons/22607.png"
- },
- {
-  "id": "m12231",
-  "name": "Farreach Canvas",
-  "icon": "icons/21603.png"
- },
- {
-  "id": "m7607",
-  "name": "Wolfram Ingot",
-  "icon": "icons/20801.png"
- },
- {
-  "id": "m12563",
-  "name": "Wyvern Leather",
-  "icon": "icons/21831.png"
- },
- {
-  "id": "m5366",
-  "name": "Cedar Lumber",
-  "icon": "icons/22467.png"
+  "id": "m5190",
+  "name": "Topaz",
+  "icon": "icons/21292.png",
+  "price": 4200
  },
  {
   "id": "m5506",
   "name": "Void Glue",
-  "icon": "icons/22607.png"
+  "icon": "icons/22607.png",
+  "price": 3000
+ },
+ {
+  "id": "m7023",
+  "name": "Cobalt Joint Plate",
+  "icon": "icons/21003.png",
+  "price": 1700
+ },
+ {
+  "id": "m7022",
+  "name": "Steel Joint Plate",
+  "icon": "icons/21003.png",
+  "price": 1100
+ },
+ {
+  "id": "m5059",
+  "name": "Cobalt Ingot",
+  "icon": "icons/20802.png",
+  "price": 900
+ },
+ {
+  "id": "m5060",
+  "name": "Darksteel Ingot",
+  "icon": "icons/20804.png",
+  "price": 5500
+ },
+ {
+  "id": "m5094",
+  "name": "Cobalt Rivets",
+  "icon": "icons/21003.png",
+  "price": 1700
+ },
+ {
+  "id": "m5064",
+  "name": "Silver Ingot",
+  "icon": "icons/20810.png",
+  "price": 1400
+ },
+ {
+  "id": "m7018",
+  "name": "Iron Nails",
+  "icon": "icons/21004.png",
+  "price": 800
+ },
+ {
+  "id": "m5066",
+  "name": "Electrum Ingot",
+  "icon": "icons/20812.png",
+  "price": 1700
+ },
+ {
+  "id": "m5061",
+  "name": "Darksteel Nugget",
+  "icon": "icons/20808.png",
+  "price": 2400
+ },
+ {
+  "id": "m5095",
+  "name": "Darksteel Rivets",
+  "icon": "icons/21003.png",
+  "price": 2500
+ },
+ {
+  "id": "m5068",
+  "name": "Rose Gold Nugget",
+  "icon": "icons/20821.png",
+  "price": 2000
+ },
+ {
+  "id": "m5067",
+  "name": "Rose Gold Ingot",
+  "icon": "icons/20814.png",
+  "price": 500
+ },
+ {
+  "id": "m5079",
+  "name": "Mythril Plate",
+  "icon": "icons/20956.png",
+  "price": 1700
+ },
+ {
+  "id": "m5505",
+  "name": "Horn Glue",
+  "icon": "icons/22607.png",
+  "price": 1300
+ },
+ {
+  "id": "m9359",
+  "name": "Platinum Nugget",
+  "icon": "icons/20817.png",
+  "price": 2900
+ },
+ {
+  "id": "m5378",
+  "name": "Spruce Lumber",
+  "icon": "icons/22465.png",
+  "price": 2400
+ },
+ {
+  "id": "m26532",
+  "name": "Pure Titanium Plate",
+  "icon": "icons/20961.png",
+  "price": 22000
+ },
+ {
+  "id": "m12232",
+  "name": "Cassia Lumber",
+  "icon": "icons/22462.png",
+  "price": 4000
+ },
+ {
+  "id": "m7017",
+  "name": "Varnish",
+  "icon": "icons/22802.png",
+  "price": 1600
+ },
+ {
+  "id": "m19967",
+  "name": "Rhodonite",
+  "icon": "icons/21277.png",
+  "price": 3900
+ },
+ {
+  "id": "m7607",
+  "name": "Wolfram Ingot",
+  "icon": "icons/20801.png",
+  "price": 3500
+ },
+ {
+  "id": "m14146",
+  "name": "High Mythrite Ingot",
+  "icon": "icons/20824.png",
+  "price": 4300
+ },
+ {
+  "id": "m12912",
+  "name": "Celestine",
+  "icon": "icons/21286.png",
+  "price": 4500
+ },
+ {
+  "id": "m19925",
+  "name": "Beech Lumber",
+  "icon": "icons/22460.png",
+  "price": 1800
+ },
+ {
+  "id": "m5366",
+  "name": "Cedar Lumber",
+  "icon": "icons/22467.png",
+  "price": 1900
+ },
+ {
+  "id": "m5512",
+  "name": "Clear Glass Lens",
+  "icon": "icons/22605.png",
+  "price": 53
+ },
+ {
+  "id": "m5074",
+  "name": "Cobalt Plate",
+  "icon": "icons/20952.png",
+  "price": 2500
+ },
+ {
+  "id": "m26530",
+  "name": "Cryptomeria Lumber",
+  "icon": "icons/22466.png",
+  "price": 22000
+ },
+ {
+  "id": "m5075",
+  "name": "Darksteel Plate",
+  "icon": "icons/20954.png",
+  "price": 4000
+ },
+ {
+  "id": "m12602",
+  "name": "Enchanted Hardsilver Ink",
+  "icon": "icons/25922.png",
+  "price": 3000
+ },
+ {
+  "id": "m14935",
+  "name": "Galvanized Garlond Steel",
+  "icon": "icons/20967.png",
+  "price": 6000
+ },
+ {
+  "id": "m5069",
+  "name": "Gold Ingot",
+  "icon": "icons/20809.png",
+  "price": 350
+ },
+ {
+  "id": "m12521",
+  "name": "Hardsilver Ingot",
+  "icon": "icons/20826.png",
+  "price": 2500
+ },
+ {
+  "id": "m12580",
+  "name": "Holy Cedar Lumber",
+  "icon": "icons/22460.png",
+  "price": 2496
+ },
+ {
+  "id": "m5092",
+  "name": "Iron Rivets",
+  "icon": "icons/21003.png",
+  "price": 73
+ },
+ {
+  "id": "m12541",
+  "name": "Larimar",
+  "icon": "icons/21324.png",
+  "price": 3200
+ },
+ {
+  "id": "m19947",
+  "name": "Molybdenum Ingot",
+  "icon": "icons/20830.png",
+  "price": 2200
+ },
+ {
+  "id": "m5065",
+  "name": "Mythril Ingot",
+  "icon": "icons/20811.png",
+  "price": 514
+ },
+ {
+  "id": "m5099",
+  "name": "Mythril Rivets",
+  "icon": "icons/21003.png",
+  "price": 583
+ },
+ {
+  "id": "m12519",
+  "name": "Mythrite Ingot",
+  "icon": "icons/20824.png",
+  "price": 2300
+ },
+ {
+  "id": "m12528",
+  "name": "Mythrite Rivets",
+  "icon": "icons/21014.png",
+  "price": 2100
+ },
+ {
+  "id": "m9360",
+  "name": "Platinum Ingot",
+  "icon": "icons/20810.png",
+  "price": 300
+ },
+ {
+  "id": "m5058",
+  "name": "Steel Ingot",
+  "icon": "icons/20802.png",
+  "price": 258
+ },
+ {
+  "id": "m5093",
+  "name": "Steel Rivets",
+  "icon": "icons/21003.png",
+  "price": 313
+ },
+ {
+  "id": "m16908",
+  "name": "Tempered Glass",
+  "icon": "icons/22651.png",
+  "price": 9000
+ },
+ {
+  "id": "m12525",
+  "name": "Titanium Ingot",
+  "icon": "icons/20830.png",
+  "price": 2300
+ },
+ {
+  "id": "m19962",
+  "name": "Triphane",
+  "icon": "icons/21283.png",
+  "price": 2300
+ },
+ {
+  "id": "m5371",
+  "name": "Walnut Lumber",
+  "icon": "icons/22456.png",
+  "price": 219
+ },
+ {
+  "id": "m5507",
+  "name": "Wing Glue",
+  "icon": "icons/22607.png",
+  "price": 3500
  }
 ]

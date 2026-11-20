@@ -2,11 +2,12 @@
 let CAT=[],S={items:[]};const CI={};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const CATS=["All","Ingots","Fittings","Lumber","Misc"];
+const CATS=["All","Ingots","Fittings","Lumber","Gems","Misc"];
 const imgOf=i=>i.img||(CI[i.ic]&&CI[i.ic].icon)||"";
 const ico=i=>`<div class="ico"><img src="${imgOf(i)}" alt="${esc(i.name)}"></div>`;
 const cls=i=>i.qty<=0?"out":i.qty<100?"low":"";
 const fmt=i=>i.qty>0?"x"+i.qty.toLocaleString():"sold out";
+const gil=n=>Number(n).toLocaleString()+' gil';
 const shown=()=>S.items.filter(i=>!i.hide);
 let view=0,filt="All",sel=0,dirty=false,saving=false,uid=0;
 let tt;function toast(t){const e=$('toast');e.textContent=t;e.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>e.classList.remove('show'),2800)}
@@ -19,14 +20,14 @@ function vCards(){
  const items=shown().filter(i=>filt==="All"||i.cat===filt);
  return head('✿ Emini\'s Mat Shop ✿','Bulk submarine mats, stocked fresh~')+
  `<div class="chips">${CATS.map(c=>`<span class="${c===filt?'on':''}" data-f="${c}">${c}</span>`).join('')}</div>`+
- (items.length?`<div class="grid1">${items.map(i=>`<div class="card">${ico(i)}<h3>${esc(i.name)}</h3><div class="row"><span class="qty ${cls(i)}">${fmt(i)}</span><span class="price">${i.price}</span></div>${buy(i)}</div>`).join('')}</div>`:'<div class="empty">Nothing in this shelf right now. Check back soon ♡</div>')}
+ (items.length?`<div class="grid1">${items.map(i=>`<div class="card">${ico(i)}<h3>${esc(i.name)}</h3><div class="row"><span class="qty ${cls(i)}">${fmt(i)}</span><span class="price">${gil(i.price)}</span></div>${buy(i)}</div>`).join('')}</div>`:'<div class="empty">Nothing in this shelf right now. Check back soon ♡</div>')}
 function vList(){
  const it=shown(),mx=Math.max(1,...it.map(i=>i.qty));
  return head('♡ Emini\'s Mat Shop ♡','The full stock list')+(it.length?`<div class="list">${it.map(i=>`<div class="lr">${ico(i)}<div class="nm">${esc(i.name)}<small>${esc(i.cat)}</small></div><span class="qty ${cls(i)}" style="justify-self:start">${fmt(i)}</span><div class="meter"><i style="width:${Math.max(0,i.qty)/mx*100}%"></i></div><button class="btn" ${i.qty>0?'':'disabled'} data-dm="${i.id}">DM ♡</button></div>`).join('')}</div>`:'<div class="empty">Restocking soon ♡</div>')}
 function vSlots(){
  const it=shown();if(sel>=it.length)sel=0;const i=it[sel];
  return `<div class="wrap3"><div class="hero" style="margin-top:0"><h1>✧ Emini's Stockroom ✧</h1><p>Tap a slot to peek inside</p></div><div class="slots">${it.map((x,k)=>`<div class="slot ${k===sel?'sel':''}" data-s="${k}" title="${esc(x.name)}">${ico(x)}<span class="n">${x.qty>999?(x.qty/1000).toFixed(1)+'k':x.qty||''}</span></div>`).join('')}${Array(8).fill('<div class="slot blank"></div>').join('')}</div>`+
- (i?`<div class="detail">${ico(i)}<div style="flex:1;min-width:0"><h3>${esc(i.name)}</h3><p>${esc(i.cat)} · ${fmt(i)} · ${i.price} ea</p>${buy(i)}</div></div>`:'')+`</div>`}
+ (i?`<div class="detail">${ico(i)}<div style="flex:1;min-width:0"><h3>${esc(i.name)}</h3><p>${esc(i.cat)} · ${fmt(i)} · ${gil(i.price)} ea</p>${buy(i)}</div></div>`:'')+`</div>`}
 function vPoster(){
  const it=shown().filter(i=>i.qty>0);
  return `<div class="poster"><div class="hd"><h2>✿ Emini's Mat Shop ✿</h2><p>SUBMARINE MATS · UPDATED ${esc((S.updated||'').toUpperCase())}</p></div>${it.map(i=>`<div class="it">${ico(i)}<div class="nm">${esc(i.name)}</div><div class="x">${fmt(i)}</div></div>`).join('')}<div class="ft">DM <b>@eminiwells</b> on Discord to order ♡</div></div>`}

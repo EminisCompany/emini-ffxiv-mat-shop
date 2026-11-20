@@ -83,7 +83,7 @@ h1,h2,h3,.fr{font-family:Fredoka,Nunito,sans-serif;margin:0}
 .step button{width:30px;height:30px;padding:0;font-size:16px}
 .adm input,.adm select{background:#0e0a10;color:var(--txt);border:1.5px solid var(--line);border-radius:12px;padding:6px 8px;font:600 13px Nunito,sans-serif;min-width:0}
 .adm input:focus,.adm select:focus,.adm button:focus-visible{outline:2px solid var(--pink2);outline-offset:1px}
-.adm input.q{width:84px;text-align:center}.adm input.p{width:64px;text-align:center}
+.adm input.q{width:84px;text-align:center}.adm input.p{width:84px;text-align:center}
 .addrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
 .addrow select{flex:1;min-width:160px}
 .sm{color:var(--mut);font-size:12px;margin:6px 0 0}
