@@ -1,0 +1,149 @@
+{
+ "updated": "Nov 20",
+ "items": [
+  {
+   "id": "i0",
+   "name": "Steel Rivets",
+   "ic": "m5093",
+   "qty": 9999,
+   "price": 120,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i1",
+   "name": "Cobalt Ingot",
+   "ic": "m5059",
+   "qty": 3600,
+   "price": 95,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i2",
+   "name": "Mythril Rivets",
+   "ic": "m5099",
+   "qty": 600,
+   "price": 60,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i3",
+   "name": "Steel Ingot",
+   "ic": "m5058",
+   "qty": 4800,
+   "price": 200,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i4",
+   "name": "Cobalt Joint Plate",
+   "ic": "m7023",
+   "qty": 1800,
+   "price": 40,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i5",
+   "name": "Steel Joint Plate",
+   "ic": "m7022",
+   "qty": 25,
+   "price": 120,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i6",
+   "name": "Darksteel Ingot",
+   "ic": "m5060",
+   "qty": 2400,
+   "price": 95,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i7",
+   "name": "Cobalt Rivets",
+   "ic": "m5094",
+   "qty": 900,
+   "price": 60,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i8",
+   "name": "Iron Rivets",
+   "ic": "m5092",
+   "qty": 0,
+   "price": 200,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i9",
+   "name": "Electrum Ingot",
+   "ic": "m5066",
+   "qty": 1200,
+   "price": 40,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i10",
+   "name": "Silver Ingot",
+   "ic": "m5064",
+   "qty": 9999,
+   "price": 120,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i11",
+   "name": "Mythril Ingot",
+   "ic": "m5065",
+   "qty": 3600,
+   "price": 95,
+   "cat": "Ingots"
+  },
+  {
+   "id": "i12",
+   "name": "Clear Glass Lens",
+   "ic": "m5512",
+   "qty": 600,
+   "price": 60,
+   "cat": "Misc"
+  },
+  {
+   "id": "i13",
+   "name": "Steel Nails",
+   "ic": "m7019",
+   "qty": 4800,
+   "price": 200,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i14",
+   "name": "Spruce Lumber",
+   "ic": "m5378",
+   "qty": 1800,
+   "price": 40,
+   "cat": "Lumber"
+  },
+  {
+   "id": "i15",
+   "name": "Ancient Lumber",
+   "ic": "m7606",
+   "qty": 25,
+   "price": 120,
+   "cat": "Lumber"
+  },
+  {
+   "id": "i16",
+   "name": "Iron Nails",
+   "ic": "m7018",
+   "qty": 2400,
+   "price": 95,
+   "cat": "Fittings"
+  },
+  {
+   "id": "i17",
+   "name": "Rose Gold Ingot",
+   "ic": "m5067",
+   "qty": 900,
+   "price": 60,
+   "cat": "Ingots"
+  }
+ ]
+}
