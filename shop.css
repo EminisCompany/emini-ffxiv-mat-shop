@@ -220,3 +220,4 @@ mark{background:none;color:var(--pink-2);text-decoration:underline;text-decorati
 .all{height:38px;padding:0 12px;border-radius:11px;border:1px solid var(--line-2);background:none;color:var(--muted);font-weight:600;font-size:13px;cursor:pointer}
 .all:hover{color:var(--pink-2);border-color:var(--pink)}
 .buy .add{padding:0 14px}
+@media (max-width:400px){.brand{font-size:17px;gap:8px}.brand .lotus{width:26px;height:26px}}

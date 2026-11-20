@@ -1,4 +1,4 @@
-/* Emini's Mat Shop: public storefront. Reads catalog.json + stock.json, renders, and builds a Discord order message. */
+/* Emini's FFXIV Mat Shop: public storefront. Reads catalog.json + stock.json, renders, and builds a Discord order message. */
 let CAT=[],S={items:[]};const CI={};
 let dirty=false,saving=false,uid=0; // shared with admin.js
 const $=id=>document.getElementById(id);

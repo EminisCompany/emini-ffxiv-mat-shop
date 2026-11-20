@@ -1,4 +1,4 @@
-# Emini's Mat Shop
+# Emini's FFXIV Mat Shop
 
 Static storefront hosted on GitHub Pages: https://eminiscompany.github.io/emini-mat-shop/
 
