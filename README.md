@@ -1,16 +1,10 @@
 # Emini's Mat Shop
 
-Static site. Host it on GitHub Pages (or any static host).
+Static storefront hosted on GitHub Pages: https://eminiscompany.github.io/emini-mat-shop/
 
-- `index.html`: the public shop. Customers see no controls.
-- `admin-lotus.html`: your editor. Rename it to something only you know, and don't link to it.
+- `index.html`, `shop.css`, `shop.js`: the public shop. Customers can search, filter, build an order and copy it as a Discord DM.
 - `stock.json`: the live stock the shop reads.
-- `catalog.json` + `icons/`: real FFXIV submarine mat icons you can add from the editor.
+- `catalog.json` + `icons/`: real FFXIV submarine mat icons and reference prices.
 
-## Publishing stock
-Open your admin page, edit quantities, then click **Save & publish**.
-One-time setup in the "Publishing setup" box: `owner/repo`, branch, and a fine-grained
-GitHub token limited to this repo with Contents read and write. The token stays in your browser only.
-No token? Use **Download stock.json** and commit that file yourself.
-
-Anyone who finds the admin page can edit on their own screen, but only your token can publish.
+The stock editor is **not** in this repo. It lives in the private `emini-mat-shop-admin` repo and
+edits `stock.json` here through the GitHub API, using a token only the owner has.

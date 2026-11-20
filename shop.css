@@ -121,7 +121,7 @@ mark{background:none;color:var(--pink-2);text-decoration:underline;text-decorati
 
 /* ---------- list ---------- */
 .list{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
-.row{display:grid;grid-template-columns:44px minmax(0,1fr) 140px 120px 150px;gap:16px;align-items:center;padding:10px 16px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:44px minmax(0,1fr) 140px 110px 250px;gap:16px;align-items:center;padding:10px 16px;border-top:1px solid var(--line)}
 .row:first-child{border-top:0}
 .row:hover{background:var(--surface-2)}
 .row .tile{width:42px;height:42px;border-radius:11px}
@@ -129,7 +129,7 @@ mark{background:none;color:var(--pink-2);text-decoration:underline;text-decorati
 .row .nm{font-weight:600;min-width:0}
 .row .nm small{display:block;font-weight:400;font-size:12px;color:var(--faint)}
 .row .price{text-align:right;font-size:15px}
-.row .add{height:34px}
+.row .add,.row .all,.row .amt{height:34px}
 .row.is-out .nm,.row.is-out .price,.row.is-out .tile{opacity:.5}
 @media (max-width:680px){
   .row{grid-template-columns:42px minmax(0,1fr) auto;row-gap:6px}
@@ -137,7 +137,7 @@ mark{background:none;color:var(--pink-2);text-decoration:underline;text-decorati
   .row .nm{grid-column:2;grid-row:1}
   .row .stock{grid-column:2;grid-row:2}
   .row .price{grid-column:3;grid-row:1}
-  .row .add{grid-column:3;grid-row:2}
+  .row .buy{grid-column:1/-1;grid-row:3}
 }
 .empty{display:grid;justify-items:center;gap:14px;padding:64px 16px;text-align:center;color:var(--muted);border:1px dashed var(--line-2);border-radius:var(--r)}
 .empty p{margin:0}
@@ -210,3 +210,13 @@ mark{background:none;color:var(--pink-2);text-decoration:underline;text-decorati
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 [hidden]{display:none!important}
+
+/* buy controls: exact amount, all, add */
+.buy{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:6px}
+.amt{width:100%;min-width:0;height:38px;padding:0 10px;border-radius:11px;border:1px solid var(--line-2);background:var(--well);color:var(--text);font-variant-numeric:tabular-nums;outline:none;-moz-appearance:textfield}
+.amt::placeholder{color:var(--faint)}
+.amt:focus{border-color:var(--pink);box-shadow:0 0 0 3px var(--pink-wash)}
+.amt::-webkit-inner-spin-button,.amt::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.all{height:38px;padding:0 12px;border-radius:11px;border:1px solid var(--line-2);background:none;color:var(--muted);font-weight:600;font-size:13px;cursor:pointer}
+.all:hover{color:var(--pink-2);border-color:var(--pink)}
+.buy .add{padding:0 14px}

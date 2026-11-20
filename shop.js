@@ -38,11 +38,12 @@ function hl(name){
  const k=name.toLowerCase().indexOf(q.toLowerCase());if(k<0)return esc(name);
  return esc(name.slice(0,k))+'<mark>'+esc(name.slice(k,k+q.length))+'</mark>'+esc(name.slice(k+q.length));
 }
-function addBtn(i,short){
+function addBtn(i){
  if(i.qty<=0)return '<button class="add" disabled>Sold out</button>';
  const q=order[i.id];
- return q?`<button class="add in-order" data-open>${IC.check}${short?N(q):'In your order · '+N(q)}</button>`
-         :`<button class="add" data-add="${i.id}">${IC.plus}${short?'Add':'Add to order'}</button>`;
+ return `<div class="buy"><input class="amt" type="number" inputmode="numeric" min="1" max="${i.qty}" placeholder="Amount" value="${q||''}" data-pick="${i.id}" id="pk_${i.id}" aria-label="Amount of ${esc(i.name)}">`
+  +`<button class="all" data-all="${i.id}" title="Add all ${N(i.qty)}">All</button>`
+  +`<button class="add ${q?'in-order':''}" data-add="${i.id}">${q?IC.check+'Added':IC.plus+'Add'}</button></div>`;
 }
 
 /* ---------- rendering ---------- */
@@ -82,7 +83,7 @@ function renderDrawer(){
  const ids=Object.keys(order);
  const total=ids.reduce((s,id)=>s+order[id]*byId(id).price,0);
  $('lines').innerHTML=ids.length?ids.map(id=>{const i=byId(id),q=order[id];return `<div class="line">${ico(i)}<div><div class="nm">${esc(i.name)}</div><div class="sub">${GIL}${N(i.price)} each · ${N(i.qty)} available</div></div>
-  <div class="line-r"><div class="qtybox"><button data-dec="${id}" aria-label="Fewer ${esc(i.name)}">−</button><input type="number" inputmode="numeric" min="1" max="${i.qty}" value="${q}" data-q="${id}" id="oq_${id}" aria-label="Quantity of ${esc(i.name)}"><button data-inc="${id}" aria-label="More ${esc(i.name)}">+</button></div><button class="rm" data-rm="${id}">Remove</button></div></div>`}).join('')
+  <div class="line-r"><div class="qtybox"><button data-dec="${id}" aria-label="Fewer ${esc(i.name)}">−</button><input type="number" inputmode="numeric" min="1" max="${i.qty}" value="${q}" data-q="${id}" id="oq_${id}" aria-label="Quantity of ${esc(i.name)}"><button data-inc="${id}" aria-label="More ${esc(i.name)}">+</button></div><div style="display:flex;gap:12px">${q<i.qty?`<button class="rm" data-max="${id}">All ${N(i.qty)}</button>`:''}<button class="rm" data-rm="${id}">Remove</button></div></div></div>`}).join('')
   :`<div class="drawer-empty">${LOTUS}<p>Your order is empty.<br>Add materials from the shop to build a message.</p></div>`;
  $('total').innerHTML=GIL+N(total);
  $('msg').value=orderText();
@@ -106,11 +107,13 @@ document.addEventListener('click',e=>{
  const t=e.target.closest('button,[data-cat]');if(!t)return;
  if(t.dataset.cat){ui.cat=t.dataset.cat;saveUi();renderChrome();renderItems();return}
  if(t.dataset.view){ui.view=t.dataset.view;saveUi();renderChrome();renderItems();return}
- if(t.dataset.add){const i=byId(t.dataset.add);order[i.id]=Math.min(99,i.qty);saveOrder();renderChrome();renderItems();renderDrawer();toast(`Added ${N(order[i.id])} × ${i.name}`);return}
+ if(t.dataset.add){addFromInput(t.dataset.add);return}
+ if(t.dataset.all){const i=byId(t.dataset.all);order[i.id]=i.qty;saveOrder();renderAll();toast(`Added all ${N(i.qty)} × ${i.name}`);return}
+ if(t.dataset.max){const i=byId(t.dataset.max);setQty(i.id,i.qty);renderAll();return}
  if('open' in t.dataset||t.id==='orderBtn'){openDrawer();return}
  if(t.id==='closeDrawer'){closeDrawer();return}
- if(t.dataset.inc){setQty(t.dataset.inc,order[t.dataset.inc]+99);renderAll();return}
- if(t.dataset.dec){setQty(t.dataset.dec,order[t.dataset.dec]-99);renderAll();return}
+ if(t.dataset.inc){setQty(t.dataset.inc,order[t.dataset.inc]+1);renderAll();return}
+ if(t.dataset.dec){setQty(t.dataset.dec,order[t.dataset.dec]-1);renderAll();return}
  if(t.dataset.rm){delete order[t.dataset.rm];saveOrder();renderAll();return}
  if(t.id==='clearOrder'){order={};saveOrder();renderAll();return}
  if(t.id==='copyOrder'){copy(orderText(),`Order copied! Paste it in a DM to @${HANDLE} on Discord`,$('msg'));return}
@@ -118,11 +121,22 @@ document.addEventListener('click',e=>{
  if('reset' in t.dataset){ui.q='';ui.cat='All';ui.stockOnly=false;$('q').value='';saveUi();renderChrome();renderItems();return}
 });
 function renderAll(){renderChrome();renderItems();renderDrawer()}
+function addFromInput(id){
+ const i=byId(id),inp=$('pk_'+id),v=Math.floor(+(inp&&inp.value));
+ if(!v||v<1){toast('Type an amount first, or tap All');if(inp)inp.focus();return}
+ const q=Math.min(v,i.qty);order[id]=q;saveOrder();renderAll();
+ toast(v>i.qty?`Only ${N(i.qty)} in stock, added all of them`:`${N(q)} × ${i.name} in your order`);
+}
+document.addEventListener('keydown',e=>{const id=e.target.dataset&&e.target.dataset.pick;if(id&&e.key==='Enter'){e.preventDefault();addFromInput(id)}});
 $('scrim').addEventListener('click',closeDrawer);
 $('q').addEventListener('input',e=>{ui.q=e.target.value;renderChrome();renderItems()});
 $('sort').addEventListener('change',e=>{ui.sort=e.target.value;saveUi();renderItems()});
 $('stockOnly').addEventListener('change',e=>{ui.stockOnly=e.target.checked;saveUi();renderChrome();renderItems()});
-document.addEventListener('change',e=>{const id=e.target.dataset&&e.target.dataset.q;if(id){setQty(id,+e.target.value);renderAll()}});
+document.addEventListener('change',e=>{
+ const d=e.target.dataset||{};
+ if(d.q){setQty(d.q,+e.target.value);renderAll()}
+ if(d.pick&&order[d.pick]){const v=Math.floor(+e.target.value);if(v>=1){setQty(d.pick,v);renderAll()}}
+});
 document.addEventListener('keydown',e=>{
  if(e.key==='Escape'&&!$('drawer').hidden){closeDrawer();return}
  const typing=/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName);
